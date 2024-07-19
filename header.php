@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <?php wp_head() ?>
 </head>
-<body>
+<body data-barba="wrapper">
     <!--Header-->
+    <div
+      class="fixed top-0 left-0 z-50 w-full h-screen scale-y-0 bg-dark"
+      id="page-transition"
+    ></div>
+
     <header class="header">
     <div class="container">
         <div class="header__wrapper">

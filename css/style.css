@@ -221,6 +221,10 @@
         margin-top: 25rem;
         transition: 0.5s ease;
       }
+      .header__wrapper ul{
+        display: flex;
+        flex-direction: column;
+      }
       .header__nav.open{
         right: 0;
         transition: 0.5s ease;
@@ -332,7 +336,7 @@
 
 /* services */
 .homeServices{
-  padding: 4rem;
+  padding: 4rem 0;
   background-color: var(--clr-dark);
 }
 .services__title h2{
@@ -347,7 +351,7 @@
 .services__wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 10rem;
+  padding: 10rem 0;
 
 }
 .services__card{
@@ -376,6 +380,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
+  padding: 10rem 0;
 }
 
 .homeAbout__title h2{
@@ -426,6 +431,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* align-items: stretch; */
+  padding: 5rem 0;
 }
 .homeTrends__title h2 {
   font-size: 4rem;
@@ -852,4 +858,18 @@ color: var(--clr-dark);
     display: flex;
   }
 
+
+
+}
+
+
+#page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  transform: scaleY(0);
+  background-color: black;
 }

@@ -1,4 +1,4 @@
-<?php wp_footer() ?>
+
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -26,7 +26,22 @@
       </div>
     </div>
   </footer>
+  <?php wp_footer() ?>
 
-  <script src="./scrip.js"></script>
+  <script>
+
+    let tl = gsap.timeline();
+
+    tl.from('.headerBrand', {opacity: 0, x: '-20px' duration: 2})
+      .from('.header__nav', {opacity: 0, x: '20px' duration: 2})
+
+    let homeBanner = gsap.timeline();
+
+    homeBanner.from('.HomeAbout__text', {opacity: 0, x: '-20px' duration: 2})
+      .from('.HomeAbout__img', {opacity: 0, x: '20px' duration: 2})
+
+
+  </script>
+
 </body>
 </html>

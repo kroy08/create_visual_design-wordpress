@@ -2,6 +2,7 @@
 
 <!-- ABOUT PAGE -->
 <?php if(is_page('ABOUT')) {?>
+<main data-barba="container" data-barba-namespace="about">
 <section class="aboutMe">
         <div class="container">
             <div class="aboutMe__wrapper">
@@ -73,11 +74,14 @@
         </div>
         </div>
      </section>
+     </main>
+   
      <?php }?>
 
 
 <!-- CONTACT -->
 <?php if(is_page('CONTACTS')) {?>
+    <main data-barba="container" data-barba-namespace="contacts">
  <section class="contact">
         <div class="container">
             <div class="contact__info">
@@ -120,13 +124,16 @@
             </div>
         </div>
     </section>
+    </main>
+
     <?php }?>
 
 
     <!-- UPDATESSSSSSS -->
     <?php if(is_page('UPDATE')) {?>
-    <section class="update">
-        <div class="container">
+        <main data-barba="container" data-barba-namespace="update">
+<section class="update">
+    <div class="container">
             <div class="update__title">
             <h1>Latest Trends</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, aliquid!</p>
@@ -230,9 +237,10 @@
             </div>
 
 
-         </div>
+    </div>
         
     </section>
+    </main>
     <?php }?>
 
 
